@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    /* padding: 0;
+    margin: 0; */
+    font-family: 'poppins', sans-serif;
+    /* background-color: #1d2026; */
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: #1d2026; */
+}
+
+.hero{
+    background-color: #1d2026;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+span{
+  color: aqua;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    /*list style doesn't affect*/
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: azure;
+}
+
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp{
+    width: 100%;
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 35px;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 2px;
+}
+
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+
+.active{
+    background: green;
+}
+
+.active span{
+    background: #fff;
+    margin-left: 20px;
+}
+
+.on{
+    opacity: 1;
+}
