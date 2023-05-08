@@ -8,12 +8,33 @@
     <title>Predictor</title>
 </head>
 <body>
-  <form id="upload-form" enctype="multipart/form-data" method="POST" action="/predict">
+
+  <section class="hero">
+
+    <nav>
+      <a href=""><span>Sign Language</span> Detection</a>
+
+      <ul>
+          <li><a href="index">Home</a></li>
+          <li><a href="predict">Predictor</a></li>
+      </ul>
+    </nav>
+
+    <form id="upload-form" enctype="multipart/form-data" method="POST" action="/predict">
       <input type="file" name="file" id="file">
       <input type="button" value="Upload" onclick="uploadFile()">
     </form>
-    
+
+    <div class="control">
+      <p>04</p>
+      <div class="line"><span></span></div>
+      <p>05</p>
+  </div>
+
   <div id="result"></div>
+
+  </section>
+  
   <script>
     function uploadFile() {
       // Get the form element
